@@ -6,13 +6,15 @@
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/work">Work</a></li>
-	    		</ul>
-			</nav>
+			<div id="Sidenav" class="sidenav">
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  	<a href="/">Home</a>
+		      	<a href="/about">About</a>
+	       		<a href="/work">Work</a>
+			</div>
+
+			<span id="icon" onclick="openNav()">Open</span>
+
 			<div class="container">
 			
 			{{ content }}
@@ -24,5 +26,16 @@
         			<li><a href="https://github.com/offscript">github.com/offscript</a></li>
 				</ul>
 			</footer>
+
+		<script>
+			function openNav() {
+			  document.getElementById("Sidenav").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+				}
+			function closeNav() {
+			  document.getElementById("Sidenav").style.width = "0";
+			  document.getElementById("main").style.marginLeft = "0";
+				}
+		</script>	
 		</body>
 	</html>
