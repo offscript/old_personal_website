@@ -13,14 +13,14 @@
 	       		<a href="/work">Work</a>
 			</div>
 
-			<span id="icon" onclick="openNav()">Open</span>
+			<!-- <span id="icon" onclick="openNav()">T</span> -->
 
-			<div class="container">
+			<div id="container">
 			
 			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
+			<footer id="footer">
 	    		<ul> <!-- add summore links here -->
 	        		<li><a href="mailto:twkeating1@gmail.com">email</a></li>
         			<li><a href="https://github.com/offscript">github.com/offscript</a></li>
@@ -30,11 +30,13 @@
 		<script>
 			function openNav() {
 			  document.getElementById("Sidenav").style.width = "250px";
-			  document.getElementById("main").style.marginLeft = "250px";
+			  document.getElementById("container").style.marginLeft = "250px";
+			  document.getElementById("footer").style.marginLeft = "250px";
 				}
 			function closeNav() {
 			  document.getElementById("Sidenav").style.width = "0";
-			  document.getElementById("main").style.marginLeft = "0";
+			  document.getElementById("container").style.marginLeft = "0";
+			  document.getElementById("footer").style.marginLeft = "50px";
 				}
 		</script>	
 		</body>
