@@ -45,6 +45,7 @@ body {
     .blurb {
         max-width: 100%;
         padding-left: 50px;
+        padding-right: 50px;
         padding-top: 50px;
     }
     /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -53,10 +54,6 @@ body {
         width: 100%;
     }
 
-    .headshot {
-        margin: 0 auto;
-        width: 50%
-    }
 }
 
 nav ul, footer ul {
