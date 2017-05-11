@@ -18,14 +18,24 @@ body {
     }
 
     h1 {
-        font-size: 3em;
         font-family:'Helvetica', 'Arial', 'Sans-Serif';
+        font-size: 3em;
+    }
+
+    h2 {
+        font-family:'Helvetica', 'Arial', 'Sans-Serif';
+        color: salmon;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
         line-height: 1.4em;
         color: #333;
+        font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    }
+
+    li {
+        font-family:'Helvetica', 'Arial', 'Sans-Serif';
     }
 
     footer {
@@ -48,6 +58,23 @@ body {
         padding-right: 50px;
         padding-top: 50px;
     }
+
+    .work {
+        
+        h2 {
+            margin-left: 10px;
+        }
+
+        p {
+           font-size: 1.1em;
+           margin-left: 20px;
+        }
+
+        li {
+            font-size: 1em;
+        }
+    }
+
     /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     #container {
         transition: margin-left .5s;
